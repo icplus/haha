@@ -1,0 +1,10 @@
+{
+  "Widget lan_full" : "局域网设置专业版插件",
+  "NAV_lan_full": "局域网设置",
+  "start": "开始于",
+  "limit": "可分配",
+  "leasetime": "租约时间",
+  "lan_ipaddr": "网关",
+  "netmask": "子网掩码",
+  "lan_mac": "硬件地址"
+}

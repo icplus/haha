@@ -1,0 +1,9 @@
+{
+  "Widget ftp" : "FTP插件",
+  "NAV_ftp": "FTP服务",
+  "ftp": "FTP服务",
+  "ftp_banner": "欢迎信息",
+  "ftp_enabled": "开关",
+  "ftp_anonymous": "匿名访问",
+  "ftp_write": "可写"
+}

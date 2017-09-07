@@ -1,0 +1,17 @@
+{
+  "Widget clientlist" : "客户端列表插件",
+  "NAV_clientlist": "客户端列表",
+  "ClientList" : "客户端列表",
+  "WhiteList" : "白名单",
+  "BlackList" : "黑名单",
+  "Refresh" : "刷新",
+  "MaxDown": "最大下载",
+  "MaxUp": "最大下载",
+  "addblacklist": "是否拉入黑名单？",
+  "Restoreblacklist": "是否恢复白名单？",
+  "Macaddr": "Mac地址",
+  "IPaddr": "IP地址",
+  "Expires": "租约到期",
+  "Yes": "确定",
+  "NO": "取消"
+}

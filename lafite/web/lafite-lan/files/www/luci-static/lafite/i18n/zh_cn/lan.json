@@ -1,0 +1,8 @@
+{
+  "Widget lan" : "局域网设置插件",
+  "NAV_lan": "局域网设置",
+  "start": "开始于",
+  "limit": "可分配",
+  "leasetime": "租约时间",
+  "ipaddr": "局域网网关"
+}

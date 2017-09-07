@@ -1,0 +1,1 @@
+<div ng-hide="nav.length==0" ng-class="classname" class="navbar"><div ng-repeat="item in nav" ng-bind="{{NAV_{{::item.title}} | translate}}" ng-class="{active: item.active, clicked: item.clicked}" ng-click="click(item.title, item.indexId, item)" class="item {{::item.classname}}"></div></div>

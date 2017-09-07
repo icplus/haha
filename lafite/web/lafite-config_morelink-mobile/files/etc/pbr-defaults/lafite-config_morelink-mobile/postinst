@@ -1,0 +1,14 @@
+#!/bin/sh
+
+MODULE_NAME='morelink'
+
+uci batch <<-EOF
+    set lafite.main.config=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='config'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=2
+    set lafite.${MODULE_NAME}.hashcode=68a0883354a9eb5fdfbad4d3dbcd8036c54d1b8c
+    commit lafite
+EOF
+
+exit 0

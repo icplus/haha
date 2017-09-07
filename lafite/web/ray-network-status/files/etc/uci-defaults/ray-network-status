@@ -1,0 +1,40 @@
+#!/bin/sh
+
+MODULE_NAME='rnetstus'
+MODULE_CATEGORY='service'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.enabled='1'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.version='1.0.1'
+    set lafite.${MODULE_NAME}.release='20'
+    set lafite.${MODULE_NAME}.hashcode='648b19e4f138a3adb76edd31bec8c23d93435a69'
+    set lafite.${MODULE_NAME}.description='Display Network Status Plugin for Lafite Them by Ray Confige'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/rnetstus-04997e42fd.js'
+   commit lafite
+EOF
+
+exit 0

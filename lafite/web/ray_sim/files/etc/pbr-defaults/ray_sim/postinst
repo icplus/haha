@@ -1,0 +1,34 @@
+#!/bin/sh
+
+MODULE_NAME='rsim'
+MODULE_CATEGORY='interface'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=6
+    set lafite.${MODULE_NAME}.hashcode=fcb7814fd63762359ffbf96365615a4cda9783ab
+    set lafite.${MODULE_NAME}.description=Sim Page for Lafite Theme by Ray Config
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/rsim-52ee180fb2.js'
+   commit lafite
+EOF
+
+exit 0

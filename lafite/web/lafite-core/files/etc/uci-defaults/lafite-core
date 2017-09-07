@@ -1,0 +1,8 @@
+#!/bin/sh
+
+[ -n "${IPKG_INSTROOT}" ] || uci batch <<-EOF
+    set luci.themes.lafite=/luci-static/lafite
+    set luci.main.mediaurlbase=/luci-static/lafite
+    commit luci
+EOF
+exit 0

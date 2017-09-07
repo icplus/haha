@@ -1,0 +1,12 @@
+{
+  "Widget rnetstus" : "网络状态插件",
+  "NAV_rnetstus": "网络状态",
+  "Network Status" : "网络状态",
+  "Current Up." : "当前上传流量",
+  "Current Down." : "当前下载流量",
+  "Max.Up." : "最大上传",
+  "Avg.Up." : "平均上传",
+  "Max.Down." : "最大下载",
+  "Avg.Down." : "平均下载",
+  "Canvas Error" : "您所使用的浏览器不支持此功能."
+}

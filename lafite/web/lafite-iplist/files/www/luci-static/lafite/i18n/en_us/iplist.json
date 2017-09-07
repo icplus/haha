@@ -1,0 +1,16 @@
+{
+  "Widget iplist" : "Widget IP List",
+  "NAV_iplist": "IP List",
+  "New": "Add",
+  "plsSelect": "Please Select",
+  "static_server_info": "Static IP Setting",
+  "static_name": "Name",
+  "static_ipaddr": "IP Addr",
+  "static_macaddr": "MAC Addr",
+  "table_option": "Option",
+  "table_edit": "Customer Edit",
+  "table_save": "Save",
+  "table_del": "Del",
+  "no data": "No data, please click '+' to add!",
+  "Apply": "Apply"
+}

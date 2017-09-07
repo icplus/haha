@@ -1,0 +1,14 @@
+<!DOCTYPE html><html ng-app="pandorabox" lang="zh_cn" xmlns:ng="http://angular.org" ng-class="browserClass" ng-controller="BaseController"><head><meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title>PandoraBox</title><!--[if lte IE 9]>
+        <script src="/luci-static/resources/ie-library.min.js"></script>
+    <![endif]--><!--[if lte IE 9]>
+        <script>
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+
+            // Optionally these for CSS
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+        </script>
+    <![endif]--><link rel="shortcut icon" href="favicon.ico"></head><body><div id="js_main" class="main"><div id="js-view-box"><div class="view-box" ng-view ng-show="page.main.loaded"></div><div class="view-box mask" ng-hide="page.main.loaded"><div class="controller"><div class="spinner"><div ng-class="'rect'+item" ng-repeat="item in [1,2,3,4,5]"></div></div></div><div class="bottom-alert" ng-if="page_load_tips"><div class="alert alert-opacity" ng-bind="page_load_tips | translate"></div></div></div></div><qrcode content="{{'Ali_qrcode_txt' | translate}}"></qrcode><div class="main-bg"><img src="/luci-static/lafite/img/footer.png"></div></div><script type="text/javascript" src="/luci-static/resource/script-5635548aa8.min.js"></script><script type="text/javascript" src="/luci-static/resource/angular-390db0c691.min.js"></script><script type="text/javascript" src="/luci-static/resource/angular-library-0ddc385de7.min.js"></script><script src="/luci-static/lafite/js/script-2e77351d24.min.js"></script><script src="/luci-static/lafite/js/config.min.js"></script></body></html>

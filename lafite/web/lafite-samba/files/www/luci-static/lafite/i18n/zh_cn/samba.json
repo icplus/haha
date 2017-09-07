@@ -1,0 +1,20 @@
+{
+  "Widget samba" : "网络共享插件",
+  "NAV_samba": "网络共享",
+  "homes-0" : "关闭",
+  "homes-1" : "开启",
+  "autoshare-0" : "关闭",
+  "autoshare-1" : "开启",
+  "Refresh": "刷新",
+  "samba": "网络共享",
+  "sharedInfo": "共享状态",
+  "samba_enabled": "开关",
+  "samba_name": "服务名称",
+  "samba_workgroup": "工作组",
+  "samba_description": "描述",
+  "samba_homes": "设为主目录",
+  "samba_autoshare": "自动挂载",
+  "share_name": "共享名",
+  "share_path" : "共享目录",
+  "share_anony": "匿名访问"
+}

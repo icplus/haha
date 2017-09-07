@@ -1,0 +1,41 @@
+#!/bin/sh
+
+MODULE_NAME='rwireless_guest'
+MODULE_CATEGORY='interface'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=8
+    set lafite.${MODULE_NAME}.hashcode=735d7fd79d7117d43fb739c9df30f94feedaa1c8
+    set lafite.${MODULE_NAME}.description=Wireless Guest Plugin for Lafite Theme by Ray Edition
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   delete lafite.${MODULE_NAME}.commons
+   add_list lafite.${MODULE_NAME}.commons='wireless'
+
+   commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/rwireless_guest-bd75b9986a.js'
+   commit lafite
+EOF
+
+exit 0

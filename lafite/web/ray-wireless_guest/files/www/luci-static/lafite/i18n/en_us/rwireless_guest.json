@@ -1,0 +1,15 @@
+{
+  "Widget rwireless_guest" : "Widget Wireless Guest",
+  "NAV_rwireless_guest": "Guest Mode",
+  "encryption-none": "None",
+  "encryption-psk": "WPA-Personal",
+  "encryption-psk2": "WPA2-Personal",
+  "encryption-psk+tkip+ccmp": "WPA-Personal",
+  "encryption-psk2+tkip+ccmp": "WPA2-Personal",
+  "encryption-psk-mixed+tkip+ccmp": "WPA/WPA2-Personal",
+  "wireless_guide_info": "Wireless Guide",
+  "wireless_disabled": "Switch",
+  "wireless_ssid": "SSID",
+  "wireless_encryption": "Encryption",
+  "wireless_key": "Password"
+}

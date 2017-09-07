@@ -1,0 +1,18 @@
+#!/bin/sh
+
+MODULE_NAME='common_clientlist'
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}='common'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=9
+    set lafite.${MODULE_NAME}.hashcode=eca0b9b3e37001c8e4d897659e1af9578a57aa39
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/common_clientlist-aa6f5af086.js'
+   commit lafite
+EOF
+
+exit 0

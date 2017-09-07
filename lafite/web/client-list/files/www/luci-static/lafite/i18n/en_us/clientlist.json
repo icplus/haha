@@ -1,0 +1,17 @@
+{
+  "Widget clientlist" : "Widget Client List",
+  "NAV_clientlist": "Client List",
+  "ClientList" : "Client List",
+  "WhiteList" : "White list",
+  "BlackList" : "blacklist",
+  "Refresh" : "Refresh",
+  "MaxDown": "Max Down",
+  "MaxUp": "Max Up",
+  "addblacklist": "Is it blacklisted?",
+  "Restoreblacklist": "Is the whitelist restored?",
+  "Macaddr": "Mac Address",
+  "IPaddr": "IP Address",
+  "Expires": "Lease Time",
+  "Yes": "OK",
+  "NO": "Cancel"
+}

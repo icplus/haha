@@ -1,0 +1,26 @@
+#!/bin/sh
+
+MODULE_NAME='lan_full'
+MODULE_CATEGORY='interface'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/lan_full-70c1541164.js'
+   commit lafite
+EOF
+
+exit 0

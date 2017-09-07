@@ -1,0 +1,32 @@
+#!/bin/sh
+
+MODULE_NAME='bauth'
+MODULE_CATEGORY='auth'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.enabled='1'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/bauth-883fbf2c38.js'
+   commit lafite
+EOF
+
+exit 0

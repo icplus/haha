@@ -1,0 +1,13 @@
+#!/bin/sh
+
+MODULE_NAME='common_wireless'
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}='common'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=4
+    set lafite.${MODULE_NAME}.hashcode=181256c0270c8e88bb41eb12ee98f5cef1bd1f07
+    commit lafite
+EOF
+
+exit 0

@@ -1,0 +1,14 @@
+{
+  "Widget rwireless_relay" : "Wireless Relay",
+  "NAV_rwireless_relay": "Wireless Relay",
+  "none": "none",
+  "psk+ccmp": "WPA PSK (CCMP)",
+  "psk+tkip": "WPA PSK (TKIP)",
+  "psk+tkip+ccmp": "WPA PSK (TKIP, CCMP)",
+  "psk2+ccmp": "WPA2 PSK (CCMP)",
+  "psk2+tkip": "WPA2 PSK (TKIP)",
+  "psk2+tkip+ccmp": "WPA2 PSK (TKIP, CCMP)",
+  "psk-mixed+ccmp": "mixed WPA/WPA2 PSK (CCMP)",
+  "psk-mixed+tkip": "mixed WPA/WPA2 PSK (TKIP)",
+  "psk-mixed+tkip+ccmp": "mixed WPA/WPA2 PSK (TKIP, CCMP)"
+}

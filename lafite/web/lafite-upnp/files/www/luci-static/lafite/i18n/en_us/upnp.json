@@ -1,0 +1,13 @@
+{
+  "Widget upnp" : "Widget UPnP",
+  "NAV_upnp": "UPnP",
+  "upnpd_info": "UPnP",
+  "upnpd_action": "Action",
+  "upnpd_addr": "Address",
+  "upnpd_intp": "Input Port",
+  "upnpd_outp": "Output Port",
+  "upnpd_comment": "Comment",
+  "allow": "Allow",
+  "deny": "Deny",
+  "Refresh": "Refresh"
+}

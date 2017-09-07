@@ -1,0 +1,12 @@
+{
+  "Widget ddns" : "Widget DDNS",
+  "NAV_ddns": "DDNS",
+  "ddns_server_info": "Dynamic DNS Server",
+  "ddns_enabled": "Enabled",
+  "ddns_service_name": "Service",
+  "ddns_domain": "Hostname",
+  "ddns_username": "Username",
+  "ddns_password": "Password",
+  "ddns_minute" : "minute",
+  "ddns_hour" : "hour"
+}

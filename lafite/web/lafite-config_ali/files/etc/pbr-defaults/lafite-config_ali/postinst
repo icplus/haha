@@ -1,0 +1,14 @@
+#!/bin/sh
+
+MODULE_NAME='ali'
+
+uci batch <<-EOF
+    set lafite.main.config=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='config'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=1
+    set lafite.${MODULE_NAME}.hashcode=285223afea2df93422a11a61673d7f907f169716
+    commit lafite
+EOF
+
+exit 0

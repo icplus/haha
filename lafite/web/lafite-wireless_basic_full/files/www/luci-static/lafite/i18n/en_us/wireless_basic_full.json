@@ -1,0 +1,14 @@
+{
+  "Widget wireless_full" : "Widget Wireless Pro",
+  "NAV_wireless_full": "Advance",
+  "Wireless-2.4G": "2.4G Wireless",
+  "Wireless-5.8G": "5G Wireless",
+  "wireless_disabled": "Switch",
+  "channel_auto": "Auto",
+  "wireless_ssid": "SSID",
+  "wireless_txpower": "Power",
+  "wireless_htmode": "HTMode",
+  "wireless_channel": "Channel",
+  "wireless_encryption": "Encryption",
+  "wireless_key": "Password"
+}

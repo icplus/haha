@@ -1,0 +1,16 @@
+{
+  "Widget roverview" : "总览插件",
+  "NAV_roverview": "总览",
+  "iptext": "IP地址",
+  "mactext": "MAC地址",
+  "maxDownload": "最大下载",
+  "maxUpload": "最大上传",
+  "text_cancel": "取消",
+  "text_ok": "确定",
+  "text_unknown": "未知",
+  "text_static": "永久",
+  "tips_black": "是否拉入黑名单",
+  "upTime": "租约到期",
+  "Net status" : "网络状态",
+  "Storage device" : "存储设备"
+}

@@ -1,0 +1,20 @@
+{
+  "Widget samba" : "Widget Samba",
+  "NAV_samba": "Samba",
+  "homes-0" : "OFF",
+  "homes-1" : "ON",
+  "autoshare-0" : "OFF",
+  "autoshare-1" : "ON",
+  "Refresh": "Refresh",
+  "samba": "Samba",
+  "sharedInfo": "Shared Info",
+  "samba_enabled": "Enabled",
+  "samba_name": "Name",
+  "samba_workgroup": "Workgroup",
+  "samba_description": "Description",
+  "samba_homes": "isHome",
+  "samba_autoshare": "AutoShare",
+  "share_name": "Share Name",
+  "share_path" : "Path",
+  "share_anony": "Anonymous"
+}

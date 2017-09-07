@@ -1,0 +1,9 @@
+{
+  "tipsPwdRequired": "Password Is Required",
+  "tipsInvalidInput": "No Special Character, Please Check",
+  "tipsMaxInput": "Excess Max Length",
+  "Widget rauth" : "Widget Auth",
+  "longinTitle": "Welcome to use PandoraBox Router",
+  "inputErr": "Wrong Username/Password, Please input again.",
+  "inputPwd": "Please enter your Admin Password."
+}

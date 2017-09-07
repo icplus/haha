@@ -1,0 +1,19 @@
+{
+  "Widget rlan" : "局域网设置插件",
+  "NAV_rlan": "局域网设置",
+  "setLAN": "局域网设置",
+  "setDHCP": "DHCP服务",
+  "leasetime": "租约时间",
+  "unit": "小时",
+  "gateway": "局域网IP",
+  "ipaddr": "IP地址",
+  "iprang": "IP分配范围",
+  "iplist": "已分配IP列表",
+  "unknown": "未知",
+  "emptyIPList": "列表为空",
+  "tipsCauseReboot": "修改本页配置会导致网络状态改变",
+  "Machine will be reboot!!! Continue?": "修改后, 设备将会自动重启. 是否继续操作?",
+  "Network will be restart!!! Continue?": "IP分配方式改为DHCP，网络会重启， 确认？",
+  "Network will be restart!!! Should Use Static IP!! Continue?": "DHCP服务关闭后，当前连接设备将无法上网，确定关闭?",
+  "devicename": "设备名称"
+}

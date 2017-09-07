@@ -1,0 +1,14 @@
+{
+  "Widget wireless_full" : "无线专业版插件",
+  "NAV_wireless_full": "高级设置",
+  "Wireless-2.4G": "2.4G 无线网络",
+  "Wireless-5.8G": "5G 无线网络",
+  "wireless_disabled": "无线开关",
+  "channel_auto": "自动",
+  "wireless_ssid": "无线名称",
+  "wireless_txpower": "无线功率",
+  "wireless_htmode": "频宽模式",
+  "wireless_channel": "无线频道",
+  "wireless_encryption": "无线加密",
+  "wireless_key": "无线密码"
+}

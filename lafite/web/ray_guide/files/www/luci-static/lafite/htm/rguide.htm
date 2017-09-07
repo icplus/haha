@@ -1,0 +1,127 @@
+<div ng-controller="RGuideController" class="center guide"><img src="/luci-static/lafite/img/pandorabox.png" alt="PandoraBox"><div ng-include="content"></div></div><script type="text/ng-template" id="getStart"><div ng-bind="::'startTitle' | translate" class="title"></div>
+  <div class="btn-list">
+    <div class="btn-item">
+      <div class="btn-circle">
+        <div ng-click="action_next()" class="btn-default btn-icon"></div>
+      </div>
+    </div>
+  </div>
+  <div ng-click="action_skip()" ng-bind-template="{{::'guideSkip' | translate}} &gt;&gt;" class="exit pointer"></div></script><script type="text/ng-template" id="checkMode"><div ng-bind="::'guideCheckMode' | translate" class="title"></div>
+  <canvas id="checking" style="width=300px;height=300px;"></canvas></script><script type="text/ng-template" id="chooseMode"><div class="title">
+    <p ng-bind-template="{{::'checkTipsStart' | translate}}{{::checkResult | translate}}"></p>
+    <p ng-bind="::'checkTipsEnd' | translate"></p>
+  </div>
+  <div class="btn-list margin-top">
+    <div ng-click="dhcp()" class="btn-item pointer">
+      <div class="btn-circle choose">
+        <div class="btn-default">DHCP</div>
+      </div>
+    </div>
+    <div ng-click="pppoe()" class="btn-item pointer">
+      <div class="btn-circle choose">
+        <div class="btn-default">PPPoE</div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-list margin-top">
+    <div ng-click="action_prev()" class="btn-item pointer">
+      <div ng-bind="::'setCheck' | translate" class="btn-light"></div>
+    </div>
+    <div class="line"></div>
+    <div ng-click="action_next()" class="btn-item">
+      <div class="btn-circle">
+        <div class="btn-default btn-icon"></div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="btn-item pointer">
+      <div ng-bind="::'setWireless' | translate" class="btn-light"></div>
+    </div>
+  </div></script><script type="text/ng-template" id="setNet"><div ng-bind="::'pppoeTitle' | translate" class="title icon"></div>
+  <div ng-bind="::'pppoeWarn' | translate" class="tips"></div>
+  <form name="form_wan">
+    <div ng-messages="form_wan.unameinput.$error" ng-show="!form_wan.unameinput.$valid &amp;&amp; form_wan.unameinput.$touched">
+      <div ng-message="required" ng-bind-template="{{::'wan_uname' | translate}}{{::'tipsInputRequired' | translate}}" class="tips warning"></div>
+      <div ng-message="maxlength" ng-bind-template="{{::'wan_uname' | translate}}{{::'tipsMaxInput' | translate}}" class="tips warning"></div>
+      <div ng-message="valid" ng-bind-template="{{::'wan_uname' | translate}}{{::'tipsInvalidInput' | translate}}" class="tips warning"></div>
+    </div>
+    <div ng-messages="form_wan.pwdinput.$error" ng-show="!form_wan.pwdinput.$valid &amp;&amp; form_wan.pwdinput.$touched &amp;&amp; form_wan.unameinput.$valid">
+      <div ng-message="required" ng-bind-template="{{::'wan_pwd' | translate}}{{::'tipsInputRequired' | translate}}" class="tips warning"></div>
+      <div ng-message="maxlength" ng-bind-template="{{::'wan_pwd' | translate}}{{::'tipsMaxInput' | translate}}" class="tips warning"></div>
+      <div ng-message="valid" ng-bind-template="{{::'wan_pwd' | translate}}{{::'tipsInvalidInput' | translate}}" class="tips warning"></div>
+    </div>
+    <div ng-class="{warning: form_wan.unameinput.$invalid &amp;&amp; form_wan.unameinput.$touched}" class="input-group big"><i class="icons icon-name"></i>
+      <input id="username" type="text" name="unameinput" ng-model="wan.username" placeholder="{{::'pppoeInputUname' | translate}}" required ng-maxlength="32">
+      <div ng-click="wan.username=''" class="toggle clear"></div>
+    </div>
+    <div ng-class="{warning: form_wan.pwdinput.$invalid &amp;&amp; form_wan.pwdinput.$touched}" class="input-group big"><i class="icons icon-passwd"></i>
+      <input id="password" type="password" name="pwdinput" valid-pwd ng-model="wan.password" placeholder="{{::'pppoeInputPwd' | translate}}" required ng-maxlength="32">
+      <div class="toggle eye"></div>
+    </div>
+  </form>
+  <div class="btn-list">
+    <div ng-click="action_prev()" class="btn-item pointer">
+      <div ng-bind="::'setCheck' | translate" class="btn-light"></div>
+    </div>
+    <div class="line"></div>
+      <div ng-class="{ pointer: form_wan.$vaild }" class="btn-item">
+        <div class="btn-circle">
+          <input type="submit" ng-click="action_next()" ng-disabled="!form_wan.$valid" value="" readonly class="btn-default btn-icon">
+        </div>
+      </div>
+    <div class="line"></div>
+    <div class="btn-item">
+      <div ng-bind="::'setWireless' | translate" class="btn-light"></div>
+    </div>
+  </div></script><script type="text/ng-template" id="setWireless"><div ng-bind="::'wirelessTitle' | translate" class="title"></div>
+  <div ng-bind="::'wirelessTips' | translate" class="tips"></div>
+  <form name="form_wireless">
+    <div ng-messages="form_wireless.ssidinput.$error" ng-show="!form_wireless.ssidinput.$valid &amp;&amp; form_wireless.ssidinput.$touched">
+      <div ng-message="required" ng-bind-template="{{::'wireless_ssid' | translate}}{{::'tipsInputRequired' | translate}}" class="tips warning"></div>
+      <div ng-message="maxlength" ng-bind-template="{{::'wireless_ssid' | translate}}{{::'tipsMaxInput' | translate}}" class="tips warning"></div>
+      <div ng-message="valid" ng-bind-template="{{::'wireless_ssid' | translate}}{{::'tipsInvalidInput' | translate}}" class="tips warning"></div>
+    </div>
+    <div ng-messages="form_wireless.pwdinput.$error" ng-show="form_wireless.pwdinput.$invalid &amp;&amp; form_wireless.pwdinput.$dirty">
+      <div ng-message="required" ng-bind-template="{{::'wireless_pwd' | translate}}{{::'tipsInputRequired' | translate}}" class="tips warning"></div>
+      <div ng-message="maxlength" ng-bind-template="{{::'wireless_pwd' | translate}}{{::'tipsMaxInput' | translate}}" class="tips warning"></div>
+      <div ng-message="minlength" ng-bind-template="{{::'wireless_pwd' | translate}}{{::'tipsMinInput' | translate}}" class="tips warning"></div>
+      <div ng-message="valid" ng-bind-template="{{::'wireless_pwd' | translate}}{{::'tipsInvalidInput' | translate}}" class="tips warning"></div>
+    </div>
+    <div ng-class="{warning: !form_wireless.ssidinput.$valid &amp;&amp; form_wireless.ssidinput.$dirty}" class="input-group big"><i class="icons icon-wifiName"></i>
+      <input id="ssid" type="text" name="ssidinput" ng-model="wireless.ssid" placeholder="{{::'wirelessInputSSID' | translate}}" required ng-maxlength="32">
+      <div ng-click="wireless.ssid=''" class="toggle clear"></div>
+    </div>
+    <div ng-class="{warning: form_wireless.pwdinput.$invalid &amp;&amp; form_wireless.pwdinput.$dirty}" class="input-group big"><i class="icons icon-wifiPwd"></i>
+      <input id="password" type="password" name="pwdinput" ng-minlength="8" ng-model="wireless.key" valid-pwd placeholder="{{::'wirelessInputPwd' | translate}}" required ng-maxlength="32">
+      <div class="toggle eye"></div>
+    </div>
+  </form>
+  <div class="btn-list">
+    <div ng-click="action_prev()" class="btn-item pointer">
+      <div ng-bind="::'setCheck' | translate" class="btn-light"></div>
+    </div>
+    <div class="line"></div>
+      <div ng-class="{ pointer: form_wireless.$vaild }" class="btn-item">
+        <div class="btn-circle">
+          <input type="submit" ng-click="action_next();action_apply()" ng-disabled="!form_wireless.$valid" value="" readonly class="btn-default btn-icon">
+        </div>
+      </div>
+    <div class="line"></div>
+    <div class="btn-item">
+      <div ng-bind="::'setRouter' | translate" class="btn-light"></div>
+    </div>
+  </div></script><script type="text/ng-template" id="finish"><div ng-if-start="working" class="title">
+    <p ng-bind="::'initStart' | translate"></p>
+    <p ng-bind-template="{{::'wirelessSSID' | translate}} {{wireless.ssid}}"></p>
+    <p ng-bind-template="{{::'wirelessPwd' | translate}} {{wireless.key}}"></p>
+  </div>
+  <canvas id="working" style="width=300px;height=300px;" ng-if-end="working"></canvas>
+  <div ng-if-start="worked" class="finish"><img src="/luci-static/lafite/img/finish.png"><span ng-bind="::'initEnd' | translate"></span></div>
+  <div ng-bind="::'loginWeb' | translate" class="title color-yellow"></div>
+  <div ng-if-end="worked" class="btn-list">
+    <div ng-click="action_finish()" class="btn-item pointer">
+      <div class="btn-circle">
+        <div ng-click="action_finish()" class="btn-default btn-finish pointer"></div>
+      </div>
+    </div>
+  </div></script>

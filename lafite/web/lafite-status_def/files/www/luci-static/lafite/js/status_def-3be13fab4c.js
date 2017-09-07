@@ -1,0 +1,1 @@
+(function(){"use strict";var t;t=angular.module("pandorabox.pages"),t.register.controller("StatusDefalutController",["$scope","$UCI",function(t,o){}])}).call(this);

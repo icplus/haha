@@ -1,0 +1,10 @@
+{
+  "Widget lan_full" : "Widget LAN Pro",
+  "NAV_lan_full": "LAN",
+  "start": "Start",
+  "limit": "Quantity",
+  "leasetime": "Lease Time",
+  "lan_ipaddr": "GateWay",
+  "netmask": "Netmask",
+  "lan_mac": "MAC"
+}

@@ -1,0 +1,20 @@
+{
+  "Widget wan_full" : "Widget WAN Pro",
+  "NAV_wan_full": "WAN",
+  "wan_info": "Internet Setup",
+  "pppoe": "PPPOE",
+  "static": "Static",
+  "dhcp": "DHCP",
+  "wan_proto": "Proto",
+  "wan_username": "Username",
+  "wan_password": "Password",
+  "wan_ipaddr": "IP Addr",
+  "wan_netmask": "Netmask",
+  "wan_gateway": "Gateway",
+  "wan_dns": "Customer DNS",
+  "wan_dns0": "DNS1",
+  "wan_dns1": "DNS2",
+  "wan_dhcp_info": "Auto Get IP",
+  "wan_mtu": "MTU",
+  "wan_mac": "MAC"
+}

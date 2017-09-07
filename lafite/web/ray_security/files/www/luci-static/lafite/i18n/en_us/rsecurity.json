@@ -1,0 +1,21 @@
+{
+  "Widget rsecurity" : "Widget Security",
+  "NAV_rsecurity": "Security",
+  "SecurityTitle" : "Security",
+  "RebootHint" : "Reboot Machine and All Feature will stop.",
+  "Reboot" : "Reboot",
+  "Reboot?" : "Do you want to reboot machine?",
+  "Rebooting.." : "Rebooting...",
+  "Upgrade" : "Upgrade",
+  "CurVersion" : "CurrentVersion",
+  "OTA Upgrade" : "OTA Upgrade",
+  "Local Upgrade" : "Local Upgrade",
+  "KeepConfig?" : "Do you keep the config?",
+  "NewestVersion" : "None New",
+  "NewVersion" : "Found New!",
+  "ModifyPass" : "Modify Admin Password",
+  "wirelessDisconnect": "Wireless Devices Will Disconnect,Please Connect It Later",
+  "OldPassHint" : "Type Old Password",
+  "NewPassHint" : "Type New Password",
+  "RenewPassHint" : "Retype New Password"
+}

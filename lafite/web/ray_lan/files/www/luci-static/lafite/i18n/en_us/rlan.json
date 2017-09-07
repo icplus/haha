@@ -1,0 +1,19 @@
+{
+  "Widget rlan" : "Widget LAN",
+  "NAV_rlan": "LAN",
+  "leasetime": "Lease Time",
+  "gateway": "LAN GateWay",
+  "unit": "Hours",
+  "ipaddr": "IP Address",
+  "setLAN": "LAN",
+  "setDHCP": "DHCP Service",
+  "iprang": "IP Range",
+  "iplist": "IP List",
+  "unknown": "Unknown",
+  "emptyIPList": "List Empty",
+  "tipsCauseReboot": "Change This Partial Config Will Cause Network Reboot",
+  "Network will be restart!!! Continue?": "Open DHCP, Network will be restarted!!!",
+  "Network will be restart!!! Should Use Static IP!! Continue?": "ClClose DHCP, network will be disconnect !!! You please reconnect network by static IP.",
+",
+  "devicename": "Device Name"
+}

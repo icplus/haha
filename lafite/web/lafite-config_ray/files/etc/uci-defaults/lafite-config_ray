@@ -1,0 +1,14 @@
+#!/bin/sh
+
+MODULE_NAME='ray'
+
+uci batch <<-EOF
+    set lafite.main.config=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='config'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=97
+    set lafite.${MODULE_NAME}.hashcode=49cd19e4ff43d4fdb679c6df5bad98ea4d5fdf28
+    commit lafite
+EOF
+
+exit 0

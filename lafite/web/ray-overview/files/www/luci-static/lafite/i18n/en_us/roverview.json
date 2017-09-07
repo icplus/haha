@@ -1,0 +1,16 @@
+{
+  "Widget roverview" : "Widget Overview",
+  "NAV_roverview": "Overview",
+  "iptext": "IP",
+  "mactext": "MAC",
+  "maxDownload": "Max Download",
+  "maxUpload": "Max Upload",
+  "text_cancel": "Cancel",
+  "text_ok": "OK",
+  "text_unknown": "Unknown",
+  "text_static": "Forever",
+  "tips_black": "Black Link",
+  "upTime": "Leased Time",
+  "Net status" : "Internet",
+  "Storage device" : "Storage"
+}

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+MODULE_NAME='common_bandwidth'
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}='common'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=1
+    set lafite.${MODULE_NAME}.hashcode=3e0cb723001e50ecaf9340b84e4ed97e9bafd643
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/common_bandwidth-b97a4090fa.js'
+   commit lafite
+EOF
+
+exit 0

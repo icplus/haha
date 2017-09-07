@@ -1,0 +1,12 @@
+{
+  "Widget rsim" : "Widget Network",
+  "carrier": "Carrier",
+  "CUSTOM": "custom",
+  "MOBILE": "China MOBILE",
+  "UNICOM": "CHINA UNICOM",
+  "TELECOM": "CHINA TELECOM",
+  "apn": "APN",
+  "dialnumber": "Dial Number",
+  "config title": "Config",
+  "TITLE": "sim Dial"
+}

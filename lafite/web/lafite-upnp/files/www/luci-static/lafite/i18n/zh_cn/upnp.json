@@ -1,0 +1,13 @@
+{
+  "Widget upnp" : "UPnP服务插件",
+  "NAV_upnp": "UPnP服务",
+  "upnpd_info": "UPnP",
+  "upnpd_action": "状态",
+  "upnpd_addr": "地址",
+  "upnpd_intp": "内部端口",
+  "upnpd_outp": "外部端口",
+  "upnpd_comment": "说明",
+  "allow": "允许",
+  "deny": "阻止",
+  "Refresh": "刷新"
+}

@@ -1,0 +1,20 @@
+{
+  "Widget wan_full" : "广域网专业版插件",
+  "NAV_wan_full": "广域网",
+  "wan_info": "上网方式",
+  "pppoe": "拨号上网",
+  "static": "静态IP",
+  "dhcp": "动态IP",
+  "wan_proto": "上网协议",
+  "wan_username": "上网账号",
+  "wan_password": "拨号密码",
+  "wan_ipaddr": "IP地址",
+  "wan_netmask": "子网掩码",
+  "wan_gateway": "网关地址",
+  "wan_dns": "自定义DNS",
+  "wan_dns0": "首选DNS",
+  "wan_dns1": "备选DNS",
+  "wan_dhcp_info": "由ISP自动分配IP",
+  "wan_mtu": "最大传输单元",
+  "wan_mac": "硬件地址"
+}

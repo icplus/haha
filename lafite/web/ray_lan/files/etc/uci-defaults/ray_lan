@@ -1,0 +1,41 @@
+#!/bin/sh
+
+MODULE_NAME='rlan'
+MODULE_CATEGORY='interface'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.version='1.0.1'
+    set lafite.${MODULE_NAME}.release='57'
+    set lafite.${MODULE_NAME}.hashcode='823a1e41911c3d6f65aa420993aa03a1f0a8b591'
+    set lafite.${MODULE_NAME}.description='LAN Page for Lafite Theme by Ray Config'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   delete lafite.${MODULE_NAME}.commons
+   add_list lafite.${MODULE_NAME}.commons='clientlist'
+
+   commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/rlan-2b7626ec6c.js'
+   commit lafite
+EOF
+
+exit 0

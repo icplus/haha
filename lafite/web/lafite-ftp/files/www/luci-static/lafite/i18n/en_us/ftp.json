@@ -1,0 +1,9 @@
+{
+  "Widget ftp" : "Widget FTP",
+  "NAV_ftp": "FTP",
+  "ftp": "FTP Service",
+  "ftp_banner": "Banner",
+  "ftp_enabled": "Enable",
+  "ftp_anonymous": "Guest Access",
+  "ftp_write": "Writeabled"
+}

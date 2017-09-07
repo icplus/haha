@@ -1,0 +1,16 @@
+{
+  "Widget iplist" : "静态IP地址插件",
+  "NAV_iplist": "静态IP地址",
+  "New": "新增",
+  "plsSelect": "请选择",
+  "static_server_info": "静态IP分配",
+  "static_name": "名称",
+  "static_ipaddr": "IP地址",
+  "static_macaddr": "MAC地址",
+  "table_option": "选项",
+  "table_edit": "自定义",
+  "table_save": "保存",
+  "table_del": "删除",
+  "no data": "暂无数据，请点击 '+' 进行添加!",
+  "Apply": "保存"
+}

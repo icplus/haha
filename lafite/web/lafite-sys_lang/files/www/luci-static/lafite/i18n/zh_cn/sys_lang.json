@@ -1,0 +1,9 @@
+{
+  "Widget sys_lang" : "多语言插件",
+  "NAV_sys_lang": "语言",
+  "SysLanguage" : "系统语言",
+  "LangCurrent" : "当前语言",
+  "Auto" : "自动识别",
+  "en_us" : "English",
+  "zh_cn" : "中文"
+}

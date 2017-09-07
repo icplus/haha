@@ -1,0 +1,9 @@
+config lafite 'main'
+    list plugins 'core'
+
+config plugin 'core'
+    option category 'core'
+    list nav 'overview'
+    list nav 'interface'
+    list nav 'service'
+    list nav 'setting'

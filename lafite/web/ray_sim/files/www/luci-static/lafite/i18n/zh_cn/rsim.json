@@ -1,0 +1,12 @@
+{
+  "Widget rsim" : "Widget Network",
+  "carrier": "运营商",
+  "CUSTOM": "自定义",
+  "MOBILE": "中国移动",
+  "UNICOM": "中国联通",
+  "TELECOM": "中国电信",
+  "apn": "APN",
+  "dialnumber": "拨号号码",
+  "config title": "拨号设置",
+  "TITLE": "sim卡拨号"
+}

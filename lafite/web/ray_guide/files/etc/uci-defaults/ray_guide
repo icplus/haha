@@ -1,0 +1,47 @@
+#!/bin/sh
+
+MODULE_NAME='rguide'
+MODULE_CATEGORY='guide'
+PLUGIN_LIST=`uci get lafite.main.plugins`
+
+isExist=0
+for name in $PLUGIN_LIST
+do
+    [[ ${name} == ${MODULE_NAME} ]] && isExist=1
+done
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    add_list lafite.main.plugins=${MODULE_NAME}
+    set lafite.${MODULE_NAME}='plugin'
+    set lafite.${MODULE_NAME}.category=${MODULE_CATEGORY}
+    commit lafite
+EOF
+
+[[ $isExist == 0 ]] && \
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.enabled='1'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}.version='1.0.1'
+    set lafite.${MODULE_NAME}.release='73'
+    set lafite.${MODULE_NAME}.hashcode='a9e2deaca89a2164b6eb6907dbd2cbae0044e708'
+    set lafite.${MODULE_NAME}.description='Guide Plugin for Lafite Theme by Ray Config'
+    commit lafite
+EOF
+
+uci batch <<-EOF
+   delete lafite.${MODULE_NAME}.commons
+   add_list lafite.${MODULE_NAME}.commons='wan'
+
+   commit lafite
+EOF
+
+uci batch <<-EOF
+   set lafite.${MODULE_NAME}.jspath='/luci-static/lafite/js/rguide-3a07d04edb.js'
+   commit lafite
+EOF
+
+exit 0

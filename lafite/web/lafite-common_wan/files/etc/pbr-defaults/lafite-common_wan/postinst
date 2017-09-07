@@ -1,0 +1,13 @@
+#!/bin/sh
+
+MODULE_NAME='common_wan'
+
+uci batch <<-EOF
+    set lafite.${MODULE_NAME}='common'
+    set lafite.${MODULE_NAME}.version=1.0.1
+    set lafite.${MODULE_NAME}.release=4
+    set lafite.${MODULE_NAME}.hashcode=d2212d7967b5968cf8cf3915bc8d34d0c1cfb055
+    commit lafite
+EOF
+
+exit 0

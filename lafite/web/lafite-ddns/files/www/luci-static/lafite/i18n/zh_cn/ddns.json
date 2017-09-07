@@ -1,0 +1,14 @@
+{
+  "Widget ddns" : "DDNS插件",
+  "NAV_ddns": "DDNS服务",
+  "ddns_server_info": "DDNS 服务",
+  "ddns_enabled": "启用",
+  "ddns_service_name": "服务提供商",
+  "ddns_domain": "主机名",
+  "ddns_username": "用户名",
+  "ddns_password": "密码",
+  "ddns_detection": "状态检测",
+  "ddns_update": "强制更新",
+  "ddns_minute" : "分钟",
+  "ddns_hour" : "小时"
+}

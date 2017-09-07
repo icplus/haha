@@ -1,0 +1,1 @@
+(function(){"use strict";var o;o=angular.module("pandorabox.pages"),o.register.controller("RayModuleStoreController",["$scope",function(o){}])}).call(this);

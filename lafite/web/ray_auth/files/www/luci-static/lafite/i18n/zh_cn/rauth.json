@@ -1,0 +1,9 @@
+{
+  "tipsPwdRequired": "密码不能为空",
+  "tipsInvalidInput": "某些特殊字符不被允许",
+  "tipsMaxInput": "超出长度限制",
+  "Widget rauth" : "登陆插件",
+  "longinTitle": "欢迎使用PandoraBox路由器",
+  "inputErr": "密码输入错误,请重新输入",
+  "inputPwd": "请输入路由器管理密码"
+}

@@ -1,0 +1,15 @@
+{
+  "Widget rwireless_guest" : "无线访客插件",
+  "NAV_rwireless_guest": "访客网络",
+  "encryption-none": "无加密",
+  "encryption-psk": "WPA-PSK",
+  "encryption-psk2": "WPA2-PSK",
+  "encryption-psk+tkip+ccmp": "WPA-PSK",
+  "encryption-psk2+tkip+ccmp": "WPA2-PSK",
+  "encryption-psk-mixed+tkip+ccmp": "WPA/WPA2-PSK",
+  "wireless_guide_info": "访客功能",
+  "wireless_disabled": "无线开关",
+  "wireless_ssid": "无线名称",
+  "wireless_encryption": "无线加密",
+  "wireless_key": "无线密码"
+}
